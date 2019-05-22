@@ -15,7 +15,6 @@ label {
 }
 
 .button {
-    /* Para posicionar los botones a la misma posición que los campos de texto */
     padding-left: 90px; /* mismo tamaño a todos los elementos label */
 }
 button {

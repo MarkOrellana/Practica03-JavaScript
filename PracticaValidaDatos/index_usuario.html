@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="../PracticaValidaDatos/javascript/validaciones.js"></script>
+    <link href="../PracticaValidaDatos/css/style.css" rel="stylesheet" />
+    <title>PaginaValidaciones</title>
+</head>
+
+<body>
+    <form id="formulario01" method="POST" action="../PracticaValidaDatos/crearusuario.php" onsubmit="return validarCampos()">
+
+        <label for="cedula">Cedula:</label>
+        <input type="text" id="cedula" name="cedula" value="" placeholder="Ingrese # de cedula."
+            onkeypress="return solonumeros(event)" onpaste="return false" />
+        <span id="mensajeCedula" class="error"></span><br>
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese sus 2 nombres."
+            onkeypress="return sololetras(event)" onpaste="return false" />
+        <span id="mensajeNombre" class="error"></span><br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus 2 apellidos."
+            onkeypress="return sololetras(event)" onpaste="return false" />
+        <span id="mensajeApellido" class="error"></span><br>
+        <label for="direccion">Direccion:</label>
+        <input type="text" id="direccion" name="direccion" value="" placeholder="Ingrese su direccion." />
+        <span id="mensajeDireccion" class="error"></span><br>
+        <label for="telefono">Telefono:</label>
+        <input type="text" id="telefono" name="telefono" value="" placeholder="Ingrese su # telefonico."
+            onkeypress="return solonumeros(event)" onpaste="return false" />
+        <span id="mensajeTelefono" class="error"></span><br>
+        <label for="fecha">F.Nacimiento:</label>
+        <input type="date" id="fecha" name="fecha" value="" placeholder="Ingrese su fecha de Nacimiento." />
+        <span id="mensajeFecha" class="error"></span><br>
+        <label for="correo">C.Electronico:</label>
+        <!-- <input type="email" id="correo" name="correo" value="" placeholder="Ingrese su correo Electronico." /> -->
+        <input type="email" name="correo" id="correo" value="" placeholder="Ejemplo morellanac5@est.ups.edu.ec"
+            pattern=".+@[eE][sS][tT][.][uU][pP][sS][.][eE][dD][uU][.][eE][cC]" title="Solo se permiten cuentas de UPS">
+        <span id="mensajeCorreo" class="error"></span><br>
+        <div style="text-align: center">
+            <input type="submit" id="crear" name="crear" value="Aceptar" onclick="validarcedula()" />
+            <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
+        </div>
+
+    </form>
+</body>
+
+</html>

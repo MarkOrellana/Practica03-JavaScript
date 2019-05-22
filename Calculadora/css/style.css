@@ -1,0 +1,19 @@
+form {
+    max-width: 800px;
+    text-align: center;
+    border: solid 1px #c2c2c2;
+    padding-bottom: 05px;
+    margin: auto;
+    background:cyan;
+  }
+  input[type=button], input[type=submit], input[type=reset] {
+      background-color:rebeccapurple;
+      border: none;
+      color:white;
+      padding: 14px 28px;
+      font-size: 16px;
+      min-width: 17%;
+      text-decoration: none;
+      margin: 2px 2px;
+      cursor: pointer;
+  }

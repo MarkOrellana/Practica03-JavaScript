@@ -89,8 +89,8 @@ function validarcedula() {
     while (acumulado > 0)
         acumulado -= 10;
     if (cedulaM.substring(9, 10) != (acumulado * -1)) {
-        alert("Cedula Incorrecta");
+        alert("Cedula Incorrecta.");
     } else {
-        alert("Cedula Correcta");
+        alert("Cedula Correcta.");
     }
 }

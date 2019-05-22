@@ -27,7 +27,7 @@ width : 300px;
 margin: 0;
 font: 1em sans-serif;
 
--webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+-webkit-box-sizing: border-box; /* For legacy WebKit*/
    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
         box-sizing: border-box;
 }

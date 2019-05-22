@@ -2,7 +2,7 @@ function raiz() {
     document.calcu.entrada_salida.value = Math.sqrt(document.calcu.entrada_salida.value);
 }
 function porcent() {
-    document.calcu.entrada_salida.value = eval(document.calcu.entrada_salida.value) / 100;
+    document.calcu.entrada_salida.value = eval(document.calcu.entrada_salida.value) /100;
 }
 function derivada() {
     document.calcu.entrada_salida.value = 1 / (document.calcu.entrada_salida.value);
